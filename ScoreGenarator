@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ScoreGenarator : MonoBehaviour
+{
+    public Text starPointText;
+    public static int starPoint = 0;
+
+    private void Update()
+    {
+        starPointText.text = starPoint.ToString();
+    }
+}
